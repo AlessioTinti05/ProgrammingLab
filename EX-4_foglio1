@@ -17,7 +17,7 @@ def triangolo (lato1, lato2, lato3):
                 return -1
         else:
             return -1
-    else:
+    else: 
         return -1
 
 print(triangolo(13, 4, 5))
