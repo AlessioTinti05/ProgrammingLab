@@ -5,5 +5,5 @@ def palindromo(stringa):
             return -1
     return 1
 
-print(palindromo("pollop"))
+print(palindromo("pollop")) 
     
