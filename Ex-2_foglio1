@@ -5,4 +5,4 @@ def quante_volte (parola, lettera):
             count = count + 1
     return count
 
-print (quante_volte("arrosto", "a"))
+print (quante_volte("arrosto", "a")) 
