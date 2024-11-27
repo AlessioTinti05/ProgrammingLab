@@ -1,11 +1,9 @@
-def ContaParole (file):
-    file = open('file.txt', 'r')
+def ContaParole (doc):
+    with open (doc, 'r') as file:
     lista = []
-    for line in file:
-        count = 0
-        for parola in line:
-            if parola in line:
-                count = count + 1
-        lista.append (parola)
+    contenuto = file.read()
+    for word in file:
+        count = contenuto.count(word)
+        lista.append (word)
         lista.append (count)
     print(lista)
