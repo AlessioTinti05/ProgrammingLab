@@ -1,0 +1,11 @@
+def ContaParole (file):
+    file = open('file.txt', 'r')
+    lista = []
+    for line in file:
+        count = 0
+        for parola in line:
+            if parola in line:
+                count = count + 1
+        lista.append (parola)
+        lista.append (count)
+    print(lista)
