@@ -1,9 +1,9 @@
 def ContaParole (doc):
     with open (doc, 'r') as file:
-    lista = []
+    diz = {}
     contenuto = file.read()
-    for word in file:
+    words = contenuto.split()
+    for word in words:
         count = contenuto.count(word)
-        lista.append (word)
-        lista.append (count)
+        diz ['word'] = count
     print(lista)
