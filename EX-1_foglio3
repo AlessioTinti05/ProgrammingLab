@@ -1,0 +1,11 @@
+class CSVfile ():
+    def __init__ (self, name):
+        self.name = name
+
+    def get_data (self):
+        with open (self.name, "r") as file:
+            data = []
+            for line in file:
+                data.append(line.split(","))
+
+        print (data)
