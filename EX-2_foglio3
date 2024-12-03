@@ -1,4 +1,4 @@
-class veicolo():
+class Veicolo():
     def __init__ (self, modello, marca, anno):
         self.modello = modello
         self.marca = marca
@@ -14,12 +14,12 @@ class veicolo():
     def get_speed (self):
         return self.velocità
     
-    class auto(veicolo):
+    class Auto(Veicolo):
         def __init__(self, modello, marca, numero_porte):
             super. __init__ (self, modello, marca)
             self.numero_porte = numero_porte
     
-    class moto(veicolo):
+    class Moto(Veicolo):
         def __init__(self, modello, marca, tipo):
             super. __init__ (self, modello, marca)
             self.tipo = tipo
