@@ -9,7 +9,7 @@ class CSVfile ():
                 for line in file:
                     data.append(line.split(","))
         except Exception as e:
-            print("Errore", e)
+            return ('Errore! {}'.format (e))
 
         return data
     
@@ -22,7 +22,7 @@ class NumericalCSVfile (CSVfile):
         for elemento in data:
             for elemento in elemento:
                 try:
-                    data.append((float)data)
+                    data.append(float(elemento.split(",")))
                 except:
                     data.append(data)
 
