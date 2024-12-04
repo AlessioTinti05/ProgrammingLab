@@ -26,4 +26,5 @@ class NumericalCSVfile (CSVfile):
                     data.append(float(elemento.split(",")))
                 except:
                     data.append(data)
+        return data
 
