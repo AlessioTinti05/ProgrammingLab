@@ -1,4 +1,4 @@
-def quadrat (valore):
+def quadrato (valore):
     valore = input("Inserisci un valore \n")
     if type(valore) != int:
         raise Exception("Input non valido, devi inserire un numero intero, hai inseiro il tipo {}".format(type(valore)))
