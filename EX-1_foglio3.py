@@ -10,7 +10,8 @@ class CSVfile ():
                     data.append(line.split(","))
         except Exception as e:
             return ('Errore! {}'.format (e))
-
+        if self.name is not str in  __init__():
+            raise Exception ("Errore. il nome inserito non è valido")
         return data
     
 class NumericalCSVfile (CSVfile):
