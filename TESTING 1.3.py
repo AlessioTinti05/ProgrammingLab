@@ -3,7 +3,7 @@ from ProgrammingLab.fileCSV import CSVfile
 from ProgrammingLab.fileCSV import NumericalCSVfile
 
 def test_csvfile():
-    csv_file = CSVfile("test_data.csv")
+    csv_file = CSVfile("testingmaybe.csv")
     data = csv_file.get_data()
     print("Dati CSV:", data)
     #?
@@ -13,7 +13,7 @@ def test_csvfile():
     
 
 def test_numerical_csvfile():
-    numerical_csv_file = NumericalCSVfile("test_data.csv")
+    numerical_csv_file = NumericalCSVfile("testingmaybe.csv")
     data = numerical_csv_file.get_data()
     print("Dati numerici CSV:", data)
     #?
