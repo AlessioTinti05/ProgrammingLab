@@ -1,5 +1,5 @@
 def scelta (input):
-    while true:
+    while input in ["1", "2", "3"]:
         input = input("Scegli: 1 per sommare, 2 per sottrarre, 3 per uscire")
         for input in {"1", "2", "3"}:
             if input == "1":

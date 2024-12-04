@@ -1,3 +1,4 @@
+
 class CSVfile ():
     def __init__ (self, name):
         self.name = name
@@ -27,4 +28,4 @@ class NumericalCSVfile (CSVfile):
                 except:
                     data.append(elemento.split(","))
         return data
-
+#Onestamente sta roba dei testing non l'ho ben capita
