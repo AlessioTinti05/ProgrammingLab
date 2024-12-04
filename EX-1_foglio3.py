@@ -4,13 +4,13 @@ class CSVfile ():
 
     def get_data (self):
         data = []
-        try:
-            with open (self.name, "r") as file:
-                for line in file:
+        with open (self.name, "r") as file:
+            for line in file:
+                try:
                     data.append(line.split(","))
-        except Exception as e:
-            return ('Errore! {}'.format (e))
-        if self.name is not str in  __init__():
+                except Exception as e:
+                    return ('Errore! {}'.format (e))
+        if self.name is not str in  super.__init__():
             raise Exception ("Errore. il nome inserito non è valido")
         return data
     
