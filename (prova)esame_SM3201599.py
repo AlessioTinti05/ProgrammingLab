@@ -13,7 +13,7 @@ class CSVTimeSeriesFile ():
         my_file = open(self.name, 'r')
         for line in my_file:
             elemento = line.split(',')
-            temp = []  # creo lista temporanea dove mettiamo i due elementi della rig: data e media mesile
+            temp = []  # creo lista temporanea dove mettiamo i due elementi della rig: data e media mensile
             temp.append (elemento[0]) 
             media_mensile = int(elemento[1])
             if media_mensile <= 0:
