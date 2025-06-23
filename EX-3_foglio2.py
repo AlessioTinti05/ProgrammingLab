@@ -5,10 +5,10 @@ def ParolaMaxPerLettera (doc):
         alfabeto = "a b c d e f g h i j k l m n o p q r s t u v w x y z"
         lettere = alfabeto.split()
         diz = {}
-        for lettera in alfabeto:
-            max = "i"
-            for word in file:
-                if len(word) > len(max):
-                    max = word
-            diz [lettera] = word
+        for lettera in lettere:
+            pmax = "i"
+            for word in words:
+                if len(word) > len(pmax):
+                    pmax = word
+            diz [lettera] = pmax
         print (diz)
