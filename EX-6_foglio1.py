@@ -6,3 +6,11 @@ def fattoriale (numero):
     return totale
 
 print(fattoriale(5))
+
+def fattoriale2 (numero):
+    totale = 1
+    for i in range(numero , 1, -1):
+        totale = totale*i
+    return(totale)
+
+print(fattoriale2(5))
